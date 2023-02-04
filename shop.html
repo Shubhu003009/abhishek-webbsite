@@ -1,0 +1,135 @@
+<!-- updated SHOP -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4124eef4e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-2">
+      <section class="header">
+        <div class="logos">
+          <img class="logo1" src="./assets/logos/Logo1.png" alt="" />
+          <p class="logo">HeritageBird</p>
+        </div>
+
+        <div>
+          <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a id="close1" href="#foot">Contact</a></li>
+            <li id="lg-bag">
+              <a href="#CART"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+            <img id="close" src="./assets/icons/x.png" alt="" />
+          </ul>
+        </div>
+
+        <div id="mobile">
+          <ul>
+            <!-- <li><a href="cart.html" ><i class="fa-solid fa-bag-shopping"></i></a></li> -->
+            <li>
+              <a href="#CART"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+            <li id="bar"><i class="fa-solid fa-bars"></i></li>
+          </ul>
+        </div>
+      </section>
+
+      <div id="page-header">
+        <h2>#savemore</h2>
+        <p>Free shipping on orders over ₹500 !</p>
+      </div>
+
+      <!-- Render products here -->
+      <section id="product1">
+        <h2>Featured Products</h2>
+        <p>latest new collection</p>
+        <div class="pro-container products">
+          <!-- Render products here -->
+        </div>
+      </section>
+
+      <!-- Render cart items here -->
+      <div id="CART" class="f300 txtcart">Cart</div>
+      <section id="cart" class="section-p2">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Remove</td>
+              <td>Image</td>
+              <td>Product</td>
+              <td>Price</td>
+              <td>Quantity</td>
+              <!-- <td>Subtotal</td> -->
+            </tr>
+          </thead>
+
+          <tbody class="cart-items">
+            <!-- Render cartitems here -->
+          </tbody>
+        </table>
+      </section>
+
+      <section id="cart-add" class="section-p2">
+        <div id="coupon">
+          <h3 class="f300">Apply Coupon</h3>
+          <div>
+            <input type="text" class="f200" placeholder="Enter Your Coupon" />
+            <button class="btn1">Apply</button>
+          </div>
+        </div>
+
+        <div id="subtotal" class="subtotal">
+          <h3 class="f300">Cart Total</h3>
+          <table class="f100">
+            <tr>
+              <td>Total items</td>
+              <td>0</td>
+            </tr>
+            <tr class="f300">
+              <td>Total</td>
+              <td>₹0</td>
+            </tr>
+          </table>
+          <p class="f100">free shipping on orders over 500!</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="section-1">
+      <div class="col">
+        <p id="foot" class="f-logo">
+          HeritageBird<img class="img" src="./assets/logos/Logo1.png" alt="" />
+        </p>
+
+        <section class="col-1">
+          <div class="contact-1">
+            <h4>Contact</h4>
+            <p>
+              <b>Address:</b> Masuriya, 12th Circle, Pal road, Jodhpur(Raj.)
+            </p>
+            <p><b>Phone:</b> (+91) 8619592836</p>
+            <p><b>Hours:</b> 9:00 am - 11:00 pm, Mon-Sat.</p>
+          </div>
+          <div class="follow-1">
+            <h4>Follow us</h4>
+            <a href="#insta"><img src="./assets/icons/insta.png" alt="" /></a>
+            <a href="#facebook"><img src="./assets/icons/fb.png" alt="" /></a>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

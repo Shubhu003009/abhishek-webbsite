@@ -1,0 +1,53 @@
+<!-- PRODUCT SAMPLE -->
+<section>
+  <p>PRODUCT SAMPLE</p>
+  <div class="pro" onclick="window.location.href='sproduct1.html'">
+    <img src="/assets/Products/A-listed/buddha-200.png" alt="" />
+    <div class="des">
+      <span>HeritageBird</span>
+      <h5>Product-1</h5>
+      <h4>₹200</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-arrow-down icon-1"></i></a>
+  </div>
+</section>
+
+<!-- CART SAMPLE -->
+<section>
+  <p>CART SAMPLE</p>
+  <tbody class="cart-items">
+    <tr>
+      <td>
+        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+      </td>
+      <td>
+        <img src="/assets/Products/A-listed/buddha-200.png" alt="buddha" />
+      </td>
+      <td>Product-1</td>
+      <td>₹200</td>
+      <td><input type="number" value="1" /></td>
+      <td>₹200</td>
+    </tr>
+  </tbody>
+</section>
+
+// CART ARRAY let cart = []; // ADD TO CART function addToCart(id){ // check if
+product alredy exists in cart if(cart.some((item) => item.id === id)){
+alert('Product alredy in cart!') }else{ const item = products.find((product) =>
+product.id === id); cart.push({ ...item, numberOfUnits : 1, });
+console.log(cart) } } // UPDATE CART: function updateCart(){ renderCartItems();
+// renderSubtototal(); } // RENDER CART ITEMS: function renderCartItems(){
+cart.forEach((item)=>{ cartItemsEl.innerHTML =+ `
+<tbody class="cart-items">
+  <tr>
+    <td>
+      <a href="#"><i class="fa-solid fa-xmark"></i></a>
+    </td>
+    <td><img src="${item.imgSrc}" alt="${item.name}" /></td>
+    <td>${item.name}</td>
+    <td>₹${item.price}</td>
+    <td><input type="number" value="1" /></td>
+    <td>₹200</td>
+  </tr>
+</tbody>
+` }); }
